@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Project1",
+        "tasks": [
+            {
+                "name": "Task1",
+                "assignee": "Viktoriia",
+                "deadline": "2024-04-14"
+            },
+            {
+                "name": "Task2",
+                "assignee": "Alice",
+                "deadline": "2024-04-15"
+            },
+            {
+                "name": "Task1",
+                "assignee": "Viktoriia",
+                "deadline": "2024-04-14"
+            },
+            {
+                "name": "Task2",
+                "assignee": "Alice",
+                "deadline": "2024-04-15"
+            },
+            {
+                "name": "Task1",
+                "assignee": "Viktoriia",
+                "deadline": "2024-04-14"
+            },
+            {
+                "name": "Task2",
+                "assignee": "Alice",
+                "deadline": "2024-04-15"
+            },
+            {
+                "name": "Task1",
+                "assignee": "Viktoriia",
+                "deadline": "2024-04-14"
+            },
+            {
+                "name": "Task2",
+                "assignee": "Alice",
+                "deadline": "2024-04-15"
+            }
+        ]
+    },
+    {
+        "name": "Project1",
+        "tasks": []
+    },
+    {
+        "name": "Project1",
+        "tasks": []
+    },
+    {
+        "name": "Project1",
+        "tasks": []
+    }
+]
