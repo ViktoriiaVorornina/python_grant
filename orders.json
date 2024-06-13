@@ -1,0 +1,137 @@
+[
+    {
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "category": "Burgers",
+                "price": 5.99
+            },
+            {
+                "name": "Spaghetti Carbonara",
+                "category": "Pasta",
+                "price": 8.5
+            }
+        ],
+        "status": "Placed"
+    },
+    {
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "category": "Burgers",
+                "price": 5.99
+            },
+            {
+                "name": "Spaghetti Carbonara",
+                "category": "Pasta",
+                "price": 8.5
+            }
+        ],
+        "status": "Placed"
+    },
+    {
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "category": "Burgers",
+                "price": 5.99
+            },
+            {
+                "name": "Spaghetti Carbonara",
+                "category": "Pasta",
+                "price": 8.5
+            }
+        ],
+        "status": "Placed"
+    },
+    {
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "category": "Burgers",
+                "price": 5.99
+            },
+            {
+                "name": "Spaghetti Carbonara",
+                "category": "Pasta",
+                "price": 8.5
+            }
+        ],
+        "status": "Placed"
+    },
+    {
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "category": "Burgers",
+                "price": 5.99
+            },
+            {
+                "name": "Spaghetti Carbonara",
+                "category": "Pasta",
+                "price": 8.5
+            }
+        ],
+        "status": "Placed"
+    },
+    {
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "category": "Burgers",
+                "price": 5.99
+            },
+            {
+                "name": "Spaghetti Carbonara",
+                "category": "Pasta",
+                "price": 8.5
+            }
+        ],
+        "status": "Placed"
+    },
+    {
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "category": "Burgers",
+                "price": 5.99
+            },
+            {
+                "name": "Spaghetti Carbonara",
+                "category": "Pasta",
+                "price": 8.5
+            }
+        ],
+        "status": "Placed"
+    },
+    {
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "category": "Burgers",
+                "price": 5.99
+            },
+            {
+                "name": "Spaghetti Carbonara",
+                "category": "Pasta",
+                "price": 8.5
+            }
+        ],
+        "status": "Placed"
+    },
+    {
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "category": "Burgers",
+                "price": 5.99
+            },
+            {
+                "name": "Spaghetti Carbonara",
+                "category": "Pasta",
+                "price": 8.5
+            }
+        ],
+        "status": "Placed"
+    }
+]{"customer": "Viktoriia", "hotdogs": [{"name": "Cheese", "ingredients": ["Sausage", "Bun", "Cheese"]}], "total": 1.8}

@@ -1,0 +1,88 @@
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+INFO:root:Accessed dataset
+INFO:root:Operations: Sum=150, Max=50, Min=10
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
+Accessed dataset
