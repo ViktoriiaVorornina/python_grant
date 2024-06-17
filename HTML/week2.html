@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Definition and To-Do List</title>
+    <link rel="stylesheet" href="week2styles.css">
+</head>
+<body>
+    <div class="content">
+        <!-- Definition List -->
+        <h1>TAG</h1>
+        <p class="pronunciation">[tæg]</p>
+        
+        <p class="part-of-speech">noun</p>
+        <ol>
+            <li>
+                a label attached to someone or something for the purpose of identification or to give other information.
+                <p class="example">"he gave his pet a collar with a metal name tag"</p>
+                <p class="synonyms"><span class="synonyms-label">synonyms:</span> label, ticket, badge, mark, marker, tab, tally, sticker, docket, stub, chit, chitt, counterfoil, flag, stamp</p>
+            </li>
+            <li>
+                a small piece or part that is attached to a main body.
+                <p class="example">"a price tag"</p>
+            </li>
+        </ol>
+        
+        <p class="part-of-speech">verb</p>
+        <ol>
+            <li>
+                attach a label to.
+                <p class="example">"mothers suspected that their babies had been wrongly tagged during an alarm at the hospital"</p>
+                <p class="synonyms"><span class="synonyms-label">synonyms:</span> label, ticket, badge, mark, marker, tab, tally, sticker, docket, stub, chit, chitt, counterfoil, flag, stamp</p>
+                <p class="example">"the bottles were tagged with colour-coded labels"</p>
+            </li>
+            <li>
+                add to something, especially as an afterthought or with no real connection.
+                <p class="example">"she meant to <strong>tag</strong> her question <strong>on</strong> at the end of her remarks"</p>
+                <p class="synonyms"><span class="synonyms-label">synonyms:</span> add, tack, join, attach, append, affix, annex</p>
+                <p class="example">"their heads were so large that the rest of their bodies seemed <strong>tagged on</strong> as an afterthought"</p>
+            </li>
+        </ol>
+
+<!-- To-Do List -->
+<div class="todo-container">
+    <h2>My To Do List</h2>
+    <table class="task-list">
+        <tr>
+            <td><input type="checkbox" name="task1" onchange="toggleTask(this)"></td>
+            <td class="task-text">Hit the gym</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task2" checked onchange="toggleTask(this)"></td>
+            <td class="task-text completed">Pay bills</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task3" onchange="toggleTask(this)"></td>
+            <td class="task-text">Meet John</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task4" onchange="toggleTask(this)"></td>
+            <td class="task-text">Buy groceries</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task5" checked onchange="toggleTask(this)"></td>
+            <td class="task-text completed">Read a book</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task6" onchange="toggleTask(this)"></td>
+            <td class="task-text">Organize office</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task7" checked onchange="toggleTask(this)"></td>
+            <td class="task-text completed">Fix the car</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task8" onchange="toggleTask(this)"></td>
+            <td class="task-text">Meet George</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task9" checked onchange="toggleTask(this)"></td>
+            <td class="task-text completed">Buy apples</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task10" onchange="toggleTask(this)"></td>
+            <td class="task-text">Read a book</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="task11" onchange="toggleTask(this)"></td>
+            <td class="task-text">Run 5 km</td>
+            <td><span class="icon-cross">&#10060;</span></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    function toggleTask(checkbox) {
+        if (checkbox.checked) {
+            checkbox.parentElement.nextElementSibling.classList.add('completed');
+        } else {
+            checkbox.parentElement.nextElementSibling.classList.remove('completed');
+        }
+    }
+</script>
+
+        <!-- Fruit List -->
+        <div class="fruit-container">
+            <div class="fruit-item"><span class="index">1.</span> <span class="fruit-name">Apple</span></div>
+            <div class="fruit-item"><span class="index">2.</span> <span class="fruit-name">Orange</span></div>
+            <div class="fruit-item"><span class="index">3.</span> <span class="fruit-name">Pineapple</span></div>
+            <div class="fruit-item"><span class="index">4.</span> <span class="fruit-name">Pear</span></div>
+            <div class="fruit-item"><span class="index">5.</span> <span class="fruit-name">Cherry</span></div>
+        </div>
+</body>
+</html>
