@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя пошта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info img {
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        .main-content {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #f5f5f5;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #e0e0e0;
+        }
+
+        .sidebar ul li img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .email-list {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .email-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            transition: background-color 0.3s;
+        }
+
+        .email-item:hover {
+            background-color: #e0e0e0;
+        }
+
+        .email-item .star {
+            margin-right: 10px;
+        }
+
+        .email-item .sender {
+            flex: 1;
+        }
+
+        .email-item .subject {
+            flex: 2;
+            font-weight: bold;
+        }
+
+        .email-item .snippet {
+            flex: 3;
+            color: #777;
+        }
+
+        .email-item .date {
+            flex: 1;
+            text-align: right;
+        }
+
+        .email-item .attachment {
+            margin-left: 10px;
+        }
+
+        @media (max-width: 800px) {
+            .email-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .email-item .date {
+                text-align: left;
+                margin-top: 5px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .sidebar ul li span {
+                display: none;
+            }
+
+            .sidebar {
+                width: 80px;
+                padding: 10px;
+            }
+
+            .sidebar ul li img {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="icons_hw/mail.png" alt="My Mail Logo">
+            <span>MY MAIL</span>
+        </div>
+        <div class="user-info">
+            <span>user@mymail.com</span>
+            <img src="icons_hw/account.png" alt="User Icon">
+        </div>
+    </header>
+    <div class="main-content">
+        <nav class="sidebar">
+            <ul>
+                <li><img src="icons_hw/incom.png" alt="Incoming"><a href="#incoming"><span>Incoming</span></a></li>
+                <li><img src="icons_hw/outcom.png" alt="Outgoing"><a href="#outgoing"><span>Outgoing</span></a></li>
+                <li><img src="icons_hw/draft.png" alt="Drafts"><a href="#drafts"><span>Drafts</span></a></li>
+                <li><img src="icons_hw/spam.png" alt="Spam"><a href="#spam"><span>Spam</span></a></li>
+            </ul>
+        </nav>
+        <section class="email-list">
+            <div class="email-item">
+                <span class="star">★</span>
+                <span class="sender">me, Alex</span>
+                <span class="subject">Trip to South America</span>
+                <span class="snippet">Suspendisse ut sapien non arcu rutrum tempor p...</span>
+                <span class="attachment">📎</span>
+                <span class="date">12 apr.</span>
+            </div>
+            <div class="email-item">
+                <span class="star">★</span>
+                <span class="sender">me, John</span>
+                <span class="subject">Santa Monica trip</span>
+                <span class="snippet">Cras accumsan lacus quis urna ultricies, vel fi...</span>
+                <span class="attachment">📎</span>
+                <span class="date">12 apr.</span>
+            </div>
+            <div class="email-item">
+                <span class="star">★</span>
+                <span class="sender">me, John, Alex</span>
+                <span class="subject">Birthday party</span>
+                <span class="snippet">20.04.2019</span>
+                <span class="attachment">📎</span>
+                <span class="date">11 apr.</span>
+            </div>
+            <div class="email-item">
+                <span class="star">☆</span>
+                <span class="sender">Mari White</span>
+                <span class="subject">Report (march 2019)</span>
+                <span class="snippet"></span>
+                <span class="date">10 apr.</span>
+            </div>
+            <div class="email-item">
+                <span class="star">★</span>
+                <span class="sender">me, Elena</span>
+                <span class="subject">Duis semper augue</span>
+                <span class="snippet">Nunc finibus sem vel odio mattis</span>
+                <span class="attachment">📎</span>
+                <span class="date">10 apr.</span>
+            </div>
+            <div class="email-item">
+                <span class="star">☆</span>
+                <span class="sender">Bill, John</span>
+                <span class="subject">Ut congue purus</span>
+                <span class="snippet">Ut sit amet eros hendrerit, posuere arcu sed, v...</span>
+                <span class="attachment">📎</span>
+                <span class="date">5 apr.</span>
+            </div>
+            <div class="email-item">
+                <span class="star">☆</span>
+                <span class="sender">Stive</span>
+                <span class="subject">Phasellus quis velit tincidunt</span>
+                <span class="snippet"></span>
+                <span class="date">1 apr.</span>
+            </div>
+            <div class="email-item">
+                <span class="star">★</span>
+                <span class="sender">Mari White</span>
+                <span class="subject">Report (february 2019)</span>
+                <span class="snippet"></span>
+                <span class="date">10 mar.</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

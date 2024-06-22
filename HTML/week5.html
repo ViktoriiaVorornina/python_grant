@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        thead th {
+            position: sticky;
+            top: 0;
+            background-color: #e0f7fa;
+            z-index: 2;
+        }
+
+        tbody td:first-child {
+            position: sticky;
+            left: 0;
+            background-color: #e0f7fa;
+            z-index: 1;
+        }
+
+        tbody tr:nth-child(odd) td:not(:first-child) {
+            background-color: #ffffff;
+        }
+
+        tbody tr:nth-child(even) td:not(:first-child) {
+            background-color: #f2f2f2;
+        }
+
+        tbody td {
+            min-width: 150px; /* Збільшено ширину для більшої горизонтальної прокрутки */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .table-container {
+            max-height: 400px;
+            max-width: 100%;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                    <th>Header 4</th>
+                    <th>Header 5</th>
+                    <th>Header 6</th>
+                    <th>Header 7</th>
+                    <th>Header 8</th>
+                    <th>Header 9</th>
+                    <th>Header 10</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Line 1</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>12</td>
+                    <td>76</td>
+                    <td>84</td>
+                    <td>27</td>
+                    <td>45</td>
+                    <td>19</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>Line 2</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>12</td>
+                    <td>76</td>
+                    <td>84</td>
+                    <td>27</td>
+                    <td>45</td>
+                    <td>19</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>Line 3</td>
+                    <td>63</td>
+                    <td>25</td>
+                    <td>7</td>
+                    <td>23</td>
+                    <td>74</td>
+                    <td>56</td>
+                    <td>29</td>
+                    <td>12</td>
+                    <td>47</td>
+                </tr>
+                <tr>
+                    <td>Line 4</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>34</td>
+                    <td>67</td>
+                    <td>45</td>
+                    <td>29</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Line 5</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>34</td>
+                    <td>67</td>
+                    <td>45</td>
+                    <td>29</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Line 6</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>34</td>
+                    <td>67</td>
+                    <td>45</td>
+                    <td>29</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Line 7</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>34</td>
+                    <td>67</td>
+                    <td>45</td>
+                    <td>29</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Line 8</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>34</td>
+                    <td>67</td>
+                    <td>45</td>
+                    <td>29</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Line 9</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>34</td>
+                    <td>67</td>
+                    <td>45</td>
+                    <td>29</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Line 10</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>34</td>
+                    <td>67</td>
+                    <td>45</td>
+                    <td>29</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Line 11</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>34</td>
+                    <td>67</td>
+                    <td>45</td>
+                    <td>29</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Line 12</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>34</td>
+                    <td>67</td>
+                    <td>45</td>
+                    <td>29</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
