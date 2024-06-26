@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Elements Demo</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    /* Input fields */
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 10px;
+      position: relative;
+    }
+
+    input.valid {
+      border-color: green;
+      background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23008000" viewBox="0 0 24 24"><path d="M20.285 2.79l-11.59 11.59-4.295-4.295-2.414 2.415 6.707 6.707 14.004-14.003z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 20px 20px;
+    }
+
+    input.invalid {
+      border-color: red;
+      background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23FF0000" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12 0 6.627 5.373 12 12 12 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12zm0 22c-5.522 0-10-4.478-10-10s4.478-10 10-10 10 4.478 10 10-4.478 10-10 10zm5.657-14.657l-1.414-1.414-4.243 4.243-4.243-4.243-1.414 1.414 4.243 4.243-4.243 4.243 1.414 1.414 4.243-4.243 4.243 4.243 1.414-1.414-4.243-4.243 4.243-4.243z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 20px 20px;
+    }
+
+    .checkbox-container {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .checkbox-container input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .checkbox-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 4px;
+      border: 2px solid #ccc;
+    }
+
+    .checkbox-slider:before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 24px;
+      left: 3px;
+      bottom: 3px;
+      background-color: red;
+      transition: 0.4s;
+      border-radius: 4px;
+    }
+
+    .checkbox-container input:checked + .checkbox-slider:before {
+      background-color: green;
+    }
+
+    .checkbox-container input:checked + .checkbox-slider:before {
+      transform: translateX(30px);
+    }
+
+    /* Radio buttons */
+    .radio-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .radio-container label {
+      margin-right: 10px;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"] + label {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="radio"] + label::before {
+      content: ' ';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      vertical-align: middle;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+    }
+
+    input[type="radio"]:checked + label::before {
+      background-color: green;
+      border-color: green;
+    }
+
+    input[type="radio"]:not(:checked) + label::before {
+      border-color: green;
+    }
+
+    /* Buttons */
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    button.active {
+      background-color: lightgreen;
+      color: white;
+    }
+
+    button.hover {
+      background-color: green;
+      color: white;
+    }
+
+    button.hover:hover {
+      background-color: darkgreen;
+      color: white;
+    }
+
+    button.danger {
+      background-color: pink;
+      color: white;
+    }
+
+    button.danger:hover {
+      background-color: #800000;
+    }
+
+    button.disabled {
+      background-color: gray;
+      color: white;
+      cursor: not-allowed;
+    }
+
+    button.round {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button.round.green {
+      background-color: green;
+      color: white;
+    }
+
+    button.round.red {
+      background-color: red;
+      color: white;
+    }
+
+    /* Textarea */
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Inputs</h2>
+    <input type="text" placeholder="Enter some text">
+    <input type="text" class="valid" value="valid text">
+    <input type="text" class="invalid" value="invalid text">
+  </div>
+
+  <div>
+    <h2>Check boxes</h2>
+    <label class="checkbox-container">
+      <input type="checkbox">
+      <span class="checkbox-slider"></span>
+    </label>
+    <label for="subscribe1">Subscribe</label>
+    <label class="checkbox-container">
+      <input type="checkbox">
+      <span class="checkbox-slider"></span>
+    </label>
+    <label for="subscribe2">Subscribe</label>
+  </div>
+
+  <div>
+    <h2>Radio buttons</h2>
+    <div class="radio-container">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" checked>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender">
+      <label for="female">Female</label>
+    </div>
+  </div>
+
+  <div>
+    <h2>Buttons</h2>
+    <button class="active">Active</button>
+    <button class="hover">Hover</button>
+    <button class="danger">Danger</button>
+    <button class="hover danger">Hover</button>
+    <button class="disabled" disabled>Disabled</button>
+    <button class="round green">+</button>
+    <button class="round red">-</button>
+  </div>
+
+  <div>
+    <h2>Text area</h2>
+    <textarea placeholder="Enter some text..."></textarea>
+  </div>
+</body>
+</html>

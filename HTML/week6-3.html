@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #e0e0e0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            width: 100%;
+        }
+        .form-section {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .form-section h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+        .form-group label img {
+            width: 16px;
+            height: 16px;
+        }
+        .form-group input,
+        .form-group select {
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            border-radius: 0;
+            background-color: transparent;
+            flex: 1;
+        }
+        .form-group input::placeholder,
+        .form-group select::placeholder {
+            color: #999;
+        }
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-bottom: 2px solid #008080;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #008080;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            align-self: flex-end;
+        }
+        .submit-btn:hover {
+            background-color: #006666;
+        }
+        @media (max-width: 900px) {
+            .container {
+                padding: 20px;
+            }
+            .form-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .form-section {
+                padding: 10px;
+            }
+            .form-group input, .form-group select {
+                padding: 5px;
+            }
+            .submit-btn {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-section">
+                <h2>Registration form</h2>
+                <div class="form-group">
+                    <label for="username">
+                        <img src="username.png" class="icon" alt="Username icon"> 
+                    </label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        <img src="email.png" class="icon" alt="Email icon"> 
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Email address" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">
+                            <img src="pswd.png" class="icon" alt="Password icon"> 
+                        </label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">
+                            <img src="pswd.png" class="icon" alt="Confirm password icon"> 
+                        </label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section">
+                <h2>Personal details</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name"></label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name"></label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gender"></label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob"></label>
+                        <input type="date" id="dob" name="dob" placeholder="mm/dd/yyyy" required>
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="subscribe">
+                    I want to receive news and special offers
+                </label>
+                <label>
+                    <input type="checkbox" name="agree" required>
+                    I agree with the Terms and Conditions
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

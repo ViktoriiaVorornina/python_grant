@@ -1,0 +1,151 @@
+<!-- ЗА кольори пробачте,  підбирати не було часу -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .card-form {
+            background-color: #3d4f6f;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 500px;
+            position: relative;
+            overflow: visible;
+        }
+
+        .card-header {
+            background-color: #f77f00;
+            color: white;
+            padding: 10px 20px;
+            text-align: left;
+            font-weight: bold;
+            margin-left: -60px;
+            width: calc(100% + 60px);
+            z-index: 1;
+            position: relative;
+        }
+
+        .card-header h2 {
+            margin: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-group::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; 
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: rgba(61, 79, 111, 0.2);
+        }
+
+        .form-group-half {
+            width: 48%;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #3d4f6f; 
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #3d4f6f;
+            color: #f4f4f4;
+            
+            box-shadow: 0 0 0 1px rgba(61, 79, 111, 0.2); 
+        }
+
+        input::placeholder {
+            color: #c0c0c0; 
+        }
+
+        
+        #cvv {
+            box-shadow: 0 0 0 2px rgba(61, 79, 111, 0.4); 
+            cursor: pointer;
+        }
+
+        .card-footer {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 0; 
+            opacity: 0.1;
+        }
+
+        .card-footer img {
+            width: 200px;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .blue-tint {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.2);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="blue-tint"></div>
+    <div class="card-form">
+        <div class="card-header">
+            <h2>CREDIT CARD DETAILS</h2>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+            </div>
+            <div class="form-group">
+                <label for="card-name">Name On Card</label>
+                <input type="text" id="card-name" name="card-name" placeholder="Name Surname">
+            </div>
+            <div class="form-group-half">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM / YY">
+            </div>
+            <div class="form-group-half">
+                <label for="cvv">CVV / CVN</label>
+                <input type="text" id="cvv" name="cvv" placeholder="***">
+            </div>
+        </form>
+        <div class="card-footer">
+            <img src="moon_flag.png" alt="Credit Card Image">
+        </div>
+    </div>
+</body>
+</html>

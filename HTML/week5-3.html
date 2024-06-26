@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .plan {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fff;
+        }
+        .plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .plan-header {
+            font-size: 24px;
+            margin-bottom: 10px;
+            position: relative;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        .plan-header::after {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .plan-enterprise .plan-header::after {
+            background-color: #d9534f;
+        }
+        .plan-professional .plan-header::after {
+            background-color: #f0ad4e;
+        }
+        .plan-standard .plan-header::after {
+            background-color: #5bc0de;
+        }
+        .plan-basic .plan-header::after {
+            background-color: #5cb85c;
+        }
+        .plan-price {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .plan-price small {
+            color: #888;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .plan-details {
+            margin-bottom: 20px;
+            padding: 0;
+            font-weight: bold;
+        }
+        .plan-details li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .plan-buy {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .plan-enterprise .plan-buy {
+            background-color: #d9534f;
+        }
+        .plan-professional .plan-buy {
+            background-color: #f0ad4e;
+        }
+        .plan-standard .plan-buy {
+            background-color: #5bc0de;
+        }
+        .plan-basic .plan-buy {
+            background-color: #5cb85c;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="plan plan-enterprise">
+            <div class="plan-header">ENTERPRISE</div>
+            <div class="plan-price">$69<br><small>per month</small></div>
+            <ul class="plan-details">
+                <li>10GB disk space</li>
+                <li>100GB monthly bandwidth</li>
+                <li>20 email accounts</li>
+                <li>Unlimited subdomains</li>
+            </ul>
+            <a href="#" class="plan-buy">BUY</a>
+        </div>
+        <div class="plan plan-professional">
+            <div class="plan-header">PROFESSIONAL</div>
+            <div class="plan-price">$29<br><small>per month</small></div>
+            <ul class="plan-details">
+                <li>5GB disk space</li>
+                <li>60GB monthly bandwidth</li>
+                <li>10 email accounts</li>
+                <li>Unlimited subdomains</li>
+            </ul>
+            <a href="#" class="plan-buy">BUY</a>
+        </div>
+        <div class="plan plan-standard">
+            <div class="plan-header">STANDARD</div>
+            <div class="plan-price">$19<br><small>per month</small></div>
+            <ul class="plan-details">
+                <li>3GB disk space</li>
+                <li>30GB monthly bandwidth</li>
+                <li>5 email accounts</li>
+                <li>Unlimited subdomains</li>
+            </ul>
+            <a href="#" class="plan-buy">BUY</a>
+        </div>
+        <div class="plan plan-basic">
+            <div class="plan-header">BASIC</div>
+            <div class="plan-price">$9<br><small>per month</small></div>
+            <ul class="plan-details">
+                <li>1GB disk space</li>
+                <li>10GB monthly bandwidth</li>
+                <li>2 email accounts</li>
+                <li>Unlimited subdomains</li>
+            </ul>
+            <a href="#" class="plan-buy">BUY</a>
+        </div>
+    </div>
+</body>
+</html>
